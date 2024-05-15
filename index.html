@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table Interface</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <img src="college logo.jpeg" alt="college logo" class="college-logo" />
+      <h1 class="name">Table Interface</h1>
+    </header>
+    <article>
+      <div class="student-window">
+        <img src="student.jpg" class="student-logo" />
+        <button class="student-btn">Click to view Tables</button>
+      </div>
+      <div class="table hidden open">
+        <ul class="tables">
+          <ion-icon class="close" name="close-outline"></ion-icon>
+          <li><a href="employee.html" class="link">Employee</a></li>
+          <li><a href="department.html" class="link">Department</a></li>
+          <li><a href="Product.html" class="link">Product</a></li>
+          <li><a href="RawMaterial.html" class="link">Raw Material</a></li>
+          <li><a href="Supplier.html" class="link">Supplier</a></li>
+          <li><a href="Customer.html" class="link">Customer</a></li>
+          <li><a href="defect.html" class="link">Defect</a></li>
+        </ul>
+      </div>
+      <div class="overlay hidden"></div>
+      <div class="relationships">
+        <h2 class="secondary-heading">Relationships between tables :</h2>
+        <ul class="relation">
+          <li>Department to Employee (One to Many)</li>
+          <li>Employee to Product (Many to Many)</li>
+          <li>Product to RawMaterial (Many to Many)</li>
+          <li>Product to defect (One to Many)</li>
+          <li>Defect to RawMaterial (One to Many)</li>
+          <li>RawMaterial to Supplier (Many to Many)</li>
+          <li>Product to Customer (One to Many)</li>
+        </ul>
+      </div>
+    </article>
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
